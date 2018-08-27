@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/stylesheets/style.css">
+        <link rel="stylesheet" href="themes/pizzaTheme.css" />
+        <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script src="javascripts/handler.js"></script>
+        <script src="javascripts/jqm-init.js"></script>
+    </head>
+    <body>
+        <div data-role="page"  data-theme="d" id="rate-us-page">
+            <div data-role="header">
+                <a href="home.html" data-icon="back">Back</a>
+                <h1>myPIZZA</h1>
+                
+            </div>
+            <div data-role="main" class="ui-content">
+                <h1>FEEDBACK</h1>
+               <form id="rate-us-form">
+                   <input type="range" name="rates" min="0" max="5">
+                   <input type="hidden" name="user_id" id="userId" >
+                   <label for="Comment">Comment</label>
+                   <textarea placeholder="write your comment about us here" name="comment" ></textarea>
+                   <input type="submit" value="Send">
+               </form>
+            </div>
+            <script>
+                document.getElementById("userId").value= sessionStorage.user_id;
+            </script>
+            <div data-role="footer" data-theme="d" id="foot">
+                <h2>
+                    &copy IN 18-2 2018
+                </h2>
+            </div>
+        </div> 
+    </body>
+</html>
