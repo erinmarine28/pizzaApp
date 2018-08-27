@@ -1,6 +1,6 @@
 {
   "name": "pizzaApp",
   "description" : "aplikasii",
-  "repository" : "https://github.com/erinmarine28/pizzaApp"
+  "repository" : "https://github.com/erinmarine28/pizzaApp",
   "keywords": ["node" , "express" , "static"]
 }
